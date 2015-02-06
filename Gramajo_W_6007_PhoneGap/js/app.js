@@ -33,7 +33,7 @@ TroopsApp.controller('TroopsController', function($scope, $http){
 TroopsApp.controller('DetailsController', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     $scope.troopId = $routeParams.troopId;
-    $http.get('details.php?troopid=' + $routeParams.troopId).success(function(response) {
+    $http.get('http://troops.waltergramajo.com/details.php?troopid=' + $routeParams.troopId).success(function(response) {
       console.log(response);
       $scope.troopId = response;
   });
