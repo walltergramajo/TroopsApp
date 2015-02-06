@@ -1,0 +1,34 @@
+     <ion-pane>
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Boom Beach Troops</h1>
+      </ion-header-bar>
+      <ion-content>
+          <ion-refresher pulling-text="Pull to Refresh" refreshing-text="loading..." on-refresh="loadBlogs()">
+        </ion-refresher>
+        <ion-list>
+          <ion-item class="listBg" data-ng-repeat="troop in troops" href="#/details/{{troop.troops_id}}">
+          <img src='img/{{troop.troops_image}}' class="listImage" alt="troop image">
+          <p class="troopName">{{troop.troops_name}}</p>
+          <p>{{troop.troops_desc}}</p>
+          <!-- <p>{{troop.troops_level}}</p>
+          <p>{{troop.troops_health}}</p>
+          <p>{{troop.troops_damage}}</p>
+          <p>{{troop.troops_training}}</p> -->
+          </ion-tem>
+        </ion-list>
+      </ion-content>
+      <ion-footer-bar class="bar-stable">
+        <div class="tabs tabs-icon-only">
+  <a class="tab-item" href="#/troop-list">
+    <i class="icon ion-home"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+  </a>
+</div>
+    </ion-footer-bar>
+    </ion-pane>
+

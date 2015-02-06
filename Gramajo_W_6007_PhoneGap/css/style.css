@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+
+
+.listImage
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.troopName
+{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.tab-item
+{
+	background-color: #11390d;
+}
+
+.tab-item p 
+{
+	color: #FFF;
+}

@@ -1,0 +1,53 @@
+
+
+    <ion-pane>
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Troop Details</h1>
+      </ion-header-bar>
+      <ion-content>
+        <ion-list>
+          <ion-item data-ng-repeat="troop in troopId">
+           <div class="list card">
+
+  <div class="item item-avatar">
+    <img src="img/{{troop.troops_mainImage}}">
+    <h2>{{troop.troops_name}}</h2>
+    <p>Unlocked at HQ Level {{troop.troops_unlock}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src='img/{{troop.troops_image}}'>
+    <p>
+      {{troop.troops_desc}}
+    </p>
+  </div>
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <p>COST: {{troop.troops_training}}</p>
+    </a>
+    <a class="tab-item" href="#">
+      <p>HP: {{troop.troops_health}}</p>
+    </a>
+    <a class="tab-item" href="#">
+      <p>DMG: {{troop.troops_damage}}</p>
+    </a>
+  </div>
+</div>
+          </ion-tem>
+        </ion-list>
+      </ion-content>
+      <ion-footer-bar class="bar-stable">
+        <div class="tabs tabs-icon-only">
+  <a class="tab-item" href="#/troop-list">
+    <i class="icon ion-home"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-star"></i>
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-gear-a"></i>
+  </a>
+</div>
+    </ion-footer-bar>
+    </ion-pane>
